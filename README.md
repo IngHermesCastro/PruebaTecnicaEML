@@ -2,21 +2,20 @@
 ## Vistas Previas
 
 ### Listado de Usuarios
-![Captura de la vista principal del listado de usuarios](<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/cb0c2c11-e138-4679-95ff-e16b7e8cc620" />
-)
+![Captura de la vista principal del listado de usuarios][<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/cb0c2c11-e138-4679-95ff-e16b7e8cc620" />](https://github.com/IngHermesCastro/PruebaTecnicaEML/issues/1#issue-3493730046)
 
 ### Formulario de Editarr Usuario
-![Captura del formulario para editar un usuario](<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/59e019f8-80ca-4b3b-9afe-579cdfea5647" />
-)
+![Captura del formulario para editar un usuario][(<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/59e019f8-80ca-4b3b-9afe-579cdfea5647" />
+)](https://private-user-images.githubusercontent.com/161852864/498658129-59e019f8-80ca-4b3b-9afe-579cdfea5647.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk4OTYyMDYsIm5iZiI6MTc1OTg5NTkwNiwicGF0aCI6Ii8xNjE4NTI4NjQvNDk4NjU4MTI5LTU5ZTAxOWY4LTgwY2EtNGIzYi05YWZlLTU3OWNkZmVhNTY0Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwMzU4MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NWQxYjM4ODYzZmQ2NzNmY2Q3ODhkZjI4NDIxZDIwYmU1NjBmODFlZGE4YjQ3NWE3NDQ0Njk1MjExYmMxYTczJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Ju61iU7ycMjDxH1dexPiTi1M_paGUpNVhklnnNO1CkA
 
 ### Boton de Borrar Usuario
-![Captura del Boton para eliminar usuario](<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/ef200af8-b098-4399-a074-89e5598239fa" />
-)
+![Captura del Boton para eliminar usuario][<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/ef200af8-b098-4399-a074-89e5598239fa" />
+)](https://private-user-images.githubusercontent.com/161852864/498658139-ef200af8-b098-4399-a074-89e5598239fa.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk4OTYyMDYsIm5iZiI6MTc1OTg5NTkwNiwicGF0aCI6Ii8xNjE4NTI4NjQvNDk4NjU4MTM5LWVmMjAwYWY4LWIwOTgtNDM5OS1hMDc0LTg5ZTU1OTgyMzlmYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwMzU4MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZmY1MTg3MzA2ODdiYWZhOWNjMmZjNTMwOTUwN2M4YzJlN2YyNWFkZmUzN2Y2ODIxNzU4MjQ0YzE5MmFhNDY5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.kf7mz4oL-d2zFkj26TQqyo_Tlurfm5rruK6x-yBRPUU
 
 ### Formulario de Creación
-![Captura del formulario para crear un nuevo usuario](<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/2546ba5f-bae2-4533-bcad-37d1c1284fce" />
+![Captura del formulario para crear un nuevo usuario][(<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/2546ba5f-bae2-4533-bcad-37d1c1284fce" />
 )
-
+](https://private-user-images.githubusercontent.com/161852864/498658151-2546ba5f-bae2-4533-bcad-37d1c1284fce.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk4OTYyMDYsIm5iZiI6MTc1OTg5NTkwNiwicGF0aCI6Ii8xNjE4NTI4NjQvNDk4NjU4MTUxLTI1NDZiYTVmLWJhZTItNDUzMy1iY2FkLTM3ZDFjMTI4NGZjZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwMzU4MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YmU0ODNhNDI2YTNlYmFhNDRkYWNhMjNkY2JhYTRhYzM3MjgyZGI4ZWI3Y2I4YzU0OWNkOWMxNzNmZTRiYzZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Kzu-fjCGqtIe1Tcr9Lt-JpucgiALDN9TaDTR1uwJSyM
 
 ## Descripción del Proyecto
 
