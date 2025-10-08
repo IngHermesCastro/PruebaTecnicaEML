@@ -6,7 +6,7 @@
 
 ### Formulario de Editarr Usuario
 ![Captura del formulario para editar un usuario][(<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/59e019f8-80ca-4b3b-9afe-579cdfea5647" />
-)](https://private-user-images.githubusercontent.com/161852864/498658129-59e019f8-80ca-4b3b-9afe-579cdfea5647.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk4OTYyMDYsIm5iZiI6MTc1OTg5NTkwNiwicGF0aCI6Ii8xNjE4NTI4NjQvNDk4NjU4MTI5LTU5ZTAxOWY4LTgwY2EtNGIzYi05YWZlLTU3OWNkZmVhNTY0Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOFQwMzU4MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NWQxYjM4ODYzZmQ2NzNmY2Q3ODhkZjI4NDIxZDIwYmU1NjBmODFlZGE4YjQ3NWE3NDQ0Njk1MjExYmMxYTczJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Ju61iU7ycMjDxH1dexPiTi1M_paGUpNVhklnnNO1CkA
+)]
 
 ### Boton de Borrar Usuario
 ![Captura del Boton para eliminar usuario][<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/ef200af8-b098-4399-a074-89e5598239fa" />
