@@ -26,8 +26,8 @@ if (!preg_match('/^[a-zA-Z\s]+$/', $data['nombres']) || !preg_match('/^[a-zA-Z\s
     echo json_encode(['error' => 'Nombres y apellidos solo letras y espacios']);
     exit;
 }
-if (!preg_match('/^\d{7,20}$/', $data['telefono'])) {  // Solo números, min 7 dígitos
-    echo json_encode(['error' => 'Teléfono solo números (7-20 dígitos)']);
+if (!preg_match('/^\d{7,15}$/', $data['telefono'])) {  // Solo números, min 7 dígitos
+    echo json_encode(['error' => 'Teléfono solo números (7-15 dígitos)']);
     exit;
 }
 if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
