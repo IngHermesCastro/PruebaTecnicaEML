@@ -1,0 +1,69 @@
+/* src/app/users/create/create.component.css */
+
+/* Animación suave para las alertas */
+app-alert {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Transición suave para los inputs */
+.input {
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+  transform: scale(1.01);
+}
+
+/* Efecto hover en los botones */
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el formulario en mobile */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animación para errores */
+.input-error {
+  animation: shake 0.3s ease-in-out;
+  
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Loading state */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
