@@ -1,0 +1,24 @@
+<div *ngIf="isVisible" class="alert shadow-lg mb-6" [ngClass]="alertClass" role="alert">
+
+  <!-- Icono -->
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" [attr.d]="iconPath">
+    </path>
+  </svg>
+
+  <!-- Contenido -->
+  <div class="flex-1">
+    <h3 *ngIf="title" class="font-bold">{{ defaultTitle }}</h3>
+    <div class="text-sm" [class.mt-1]="title">
+      {{ message }}
+    </div>
+  </div>
+
+  <!-- Botón Cerrar -->
+  <button *ngIf="dismissible" type="button" class="btn btn-sm btn-circle btn-ghost" (click)="closeAlert()"
+    aria-label="Cerrar alerta">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+</div>

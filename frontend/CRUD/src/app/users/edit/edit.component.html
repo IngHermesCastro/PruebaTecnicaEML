@@ -1,0 +1,143 @@
+<!-- Alerta -->
+<app-alert *ngIf="showAlert" [message]="alertMessage" [type]="alertType" (close)="closeAlert()">
+</app-alert>
+
+<div class="text-sm breadcrumbs mb-6">
+    <ul>
+        <li><a routerLink="/users" class="link link-hover">Usuarios</a></li>
+        <li>Editar Usuario</li>
+    </ul>
+</div>
+
+<!-- Tarjeta del Formulario -->
+<div class="card bg-base-100 shadow-xl max-w-4xl mx-auto">
+    <div class="card-body">
+        <!-- Encabezado -->
+        <div class="flex items-center gap-3 mb-4">
+            <div class="avatar placeholder">
+                <div class="bg-secondary text-secondary-content rounded-full w-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </div>
+            </div>
+            <div>
+                <h2 class="card-title text-2xl">Editar Usuario</h2>
+                <p class="text-base-content/60">
+                    Modifica los datos y guarda los cambios
+                </p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Formulario -->
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="space-y-6">
+            <!-- Grid principal -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Campo: Nombres -->
+                <div class="form-control w-full">
+                    <label class="label">
+                        <span class="label-text font-semibold">Nombres <span class="text-error">*</span></span>
+                    </label>
+                    <input type="text" formControlName="nombres" placeholder="Ej: Hermes Duvan"
+                        class="input input-bordered w-full" [class.input-error]="hasError('nombres')"
+                        [class.input-success]="
+                            userForm.get('nombres')?.valid &&
+                            userForm.get('nombres')?.touched
+                        " />
+                    <label class="label" *ngIf="hasError('nombres')">
+                        <span class="label-text-alt text-error">{{
+                            getErrorMessage("nombres")
+                            }}</span>
+                    </label>
+                </div>
+
+                <!-- Campo: Apellidos -->
+                <div class="form-control w-full">
+                    <label class="label">
+                        <span class="label-text font-semibold">Apellidos <span class="text-error">*</span></span>
+                    </label>
+                    <input type="text" formControlName="apellidos" placeholder="Ej: Ruiz"
+                        class="input input-bordered w-full" [class.input-error]="hasError('apellidos')"
+                        [class.input-success]="
+                            userForm.get('apellidos')?.valid &&
+                            userForm.get('apellidos')?.touched
+                        " />
+                    <label class="label" *ngIf="hasError('apellidos')">
+                        <span class="label-text-alt text-error">{{
+                            getErrorMessage("apellidos")
+                            }}</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Grid para email y teléfono -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Email -->
+                <div class="form-control w-full">
+                    <label class="label">
+                        <span class="label-text font-semibold">Correo Electrónico
+                            <span class="text-error">*</span></span>
+                    </label>
+                    <input type="email" formControlName="email" placeholder="ejemplo@correo.com"
+                        class="input input-bordered w-full" [class.input-error]="hasError('email')"
+                        [class.input-success]="
+                            userForm.get('email')?.valid &&
+                            userForm.get('email')?.touched
+                        " />
+                    <label class="label" *ngIf="hasError('email')">
+                        <span class="label-text-alt text-error">{{
+                            getErrorMessage("email")
+                            }}</span>
+                    </label>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="form-control w-full">
+                    <label class="label">
+                        <span class="label-text font-semibold">Teléfono <span class="text-error">*</span></span>
+                    </label>
+                    <input type="tel" formControlName="telefono" placeholder="3123269537" maxlength="15"
+                        class="input input-bordered w-full" [class.input-error]="hasError('telefono')"
+                        [class.input-success]="
+                            userForm.get('telefono')?.valid &&
+                            userForm.get('telefono')?.touched
+                        " />
+                    <label class="label" *ngIf="hasError('telefono')">
+                        <span class="label-text-alt text-error">{{
+                            getErrorMessage("telefono")
+                            }}</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Estado -->
+            <div class="alert" [class.alert-info]="userForm.invalid" [class.alert-success]="userForm.valid">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    class="stroke-current shrink-0 w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span *ngIf="userForm.invalid">Por favor, completa todos los campos correctamente</span>
+                <span *ngIf="userForm.valid">✓ Formulario listo para guardar cambios</span>
+            </div>
+
+            <!-- Botones -->
+            <div class="card-actions justify-end gap-3 flex-col sm:flex-row">
+                <button type="button" class="btn btn-ghost btn-outline" routerLink="/users" [disabled]="isSubmitting">
+                    Cancelar
+                </button>
+
+                <button type="submit" class="btn btn-primary" [disabled]="userForm.invalid || isSubmitting">
+                    <span *ngIf="!isSubmitting">Guardar Cambios</span>
+                    <span *ngIf="isSubmitting" class="loading loading-spinner"></span>
+                    <span *ngIf="isSubmitting">Guardando...</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

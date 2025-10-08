@@ -1,0 +1,127 @@
+/* Animación de entrada */
+.alert {
+  animation: slideDown 0.3s ease-out, fadeIn 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación de salida */
+.alert.closing {
+  animation: slideUp 0.3s ease-in, fadeOut 0.3s ease-in;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* Efecto hover en el botón de cerrar */
+.btn-ghost:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
+}
+
+/* Sombra más pronunciada al hacer hover */
+.alert:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Estilos para diferentes tipos de alerta */
+.alert-success {
+  border-left: 4px solid #22c55e;
+}
+
+.alert-error {
+  border-left: 4px solid #ef4444;
+}
+
+.alert-warning {
+  border-left: 4px solid #f59e0b;
+}
+
+.alert-info {
+  border-left: 4px solid #3b82f6;
+}
+
+/* Animación del icono */
+.alert svg {
+  animation: iconPulse 0.5s ease-out;
+}
+
+@keyframes iconPulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .alert {
+    font-size: 0.875rem;
+  }
+
+  .alert svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+/* Accesibilidad: respeta las preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+
+  .alert,
+  .alert svg,
+  .btn-ghost {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,193 @@
+/* Animación de entrada para las cards */
+.card {
+    animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect en las filas de la tabla */
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación para la alerta */
+app-alert {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto en los botones */
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Skeleton loading animation */
+.loading-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Badge animations */
+.badge {
+    transition: all 0.2s ease;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal box */
+.modal-box {
+    animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Stats cards hover effect */
+.stats .stat {
+    transition: all 0.3s ease;
+}
+
+.stats .stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Avatar hover effect */
+.avatar {
+    transition: all 0.2s ease;
+}
+
+.avatar:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* Link effects */
+.link {
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+/* Search input focus effect */
+.input:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+/* Pagination buttons */
+.join-item.btn-active {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Empty state illustration pulse */
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+    transition-property: transform, box-shadow, background-color, border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Disable transitions for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
