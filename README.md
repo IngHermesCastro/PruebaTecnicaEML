@@ -1,4 +1,22 @@
 # 🚀 Prueba Técnica EML -CRUD de Gestión de Usuarios
+## Vistas Previas
+
+### Listado de Usuarios
+![Captura de la vista principal del listado de usuarios](<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/cb0c2c11-e138-4679-95ff-e16b7e8cc620" />
+)
+
+### Formulario de Editarr Usuario
+![Captura del formulario para editar un usuario](<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/59e019f8-80ca-4b3b-9afe-579cdfea5647" />
+)
+
+### Boton de Borrar Usuario
+![Captura del Boton para eliminar usuario](<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/ef200af8-b098-4399-a074-89e5598239fa" />
+)
+
+### Formulario de Creación
+![Captura del formulario para crear un nuevo usuario](<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/2546ba5f-bae2-4533-bcad-37d1c1284fce" />
+)
+
 
 ## Descripción del Proyecto
 
